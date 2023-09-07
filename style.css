@@ -1,9 +1,9 @@
 body {
-  background: rgb(0, 0, 0);
-  color: rgb(45, 45, 45);
+  background: black;
+  color: purple;
   padding: 10px;
-  font-family: arial;
-  border: 8px red ridge;
+  font-family: rowdex;
+  border: 10px purple ridge;
 }
 #all-contents {
   max-width: 800px;
@@ -12,12 +12,12 @@ body {
 
 /* navigation menu */
 nav {
-  background: rgb(255, 255, 255);
+  background: white;
   margin: 0 auto;
   display: flex;
   padding: 10px;
   margin-bottom: 20px;
-  border: 8px gold ridge;
+  border: 10px gold ridge;
 }
 h1 {
   display: flex;
@@ -40,14 +40,15 @@ a {
   font-family: rowdex;
 }
 a {
-color: red;
-font-family: rowdex;
+  text-decoration: gold 2px underline;
+  color: purple;
+  font-family: rowdex;
 }
 /* main container area beneath menu */
 main {
-    background: rgb(255, 255, 255);
+    background: white;
     display: flex; 
-  border: 8px gold ridge;
+  border: 10px gold ridge;
 }
 .sidebar {
     margin-right: 25px;
@@ -67,21 +68,77 @@ font-family: rowdex;
 }
 h3{
 color: gold;
+font-family: rowdex;
+text-decoration:purple 2px underline
 }
 
 /* portfolio styles */
 #interests {
-    border: 8px gold ridge;
+    border: 10px gold ridge;
     padding: 8px;
 }
 h2, h3 {
     margin: 0px;
 }
 p {
-color: red;
+color: purple;
 font-family: rowdex;
+text-decoration: gold 2px underline
+}
+ul { list-style: none;} /* Remove default bullets */
+
+li::before {
+    font-family: 'Font Awesome 5 Free';
+    text-decoration: none;
+    content: "\1F319";
+    color : gold;
+    margin-right: 10px; /* Optional tweak */
+    
+}
+ul { list-style: none; } /* Remove default bullets */
+
+li::after {
+    font-family: 'Font Awesome 5 Free';
+    content: "\1F319";
+    color : purple;
+    margin-left: 10px; /* Optional tweak */
 }
 ul {
-color: red;
+color: purple;
 font-family: rowdex;
+}
+a1 {
+  text-decoration: gold 2px underline
+}
+a2 {
+  color: purple;
+}
+/* portfolio styles */
+ .content h1 {
+  color: gold;
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+  color: gold;
+}
+
+#portfolio li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  
+}
+
+#portfolio li:hover {
+  background: #eee;
+  border: 10px gold ridge;
+}
+
+#portfolio a {
+  
+  text-decoration: none;
+  color: purple;
 }
