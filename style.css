@@ -22,7 +22,7 @@ nav {
 h1 {
   display: flex;
   align-items: center;
-  color: gold;
+  color: purple;
   flex: 1;
   margin: 0;
   font-family: rowdex;
@@ -62,14 +62,14 @@ main {
     padding: 15px;
 }
 h2{
-color: gold;
+color: purple;
 font-family: rowdex;
 
 }
 h3{
-color: gold;
+color: purple;
 font-family: rowdex;
-text-decoration:purple 2px underline
+text-decoration:gold 2px underline
 }
 
 /* portfolio styles */
@@ -115,7 +115,7 @@ a2 {
 }
 /* portfolio styles */
  .content h1 {
-  color: gold;
+  color: purple;
 }
 
 #portfolio {

@@ -27,32 +27,33 @@ $(function () {
      * This can give you a better idea of where to create new platforms
      * Comment the lines out to remove the grid
      */
-
     // for (let i = 100; i < canvas.width; i += 100) {
     //   createPlatform(i, canvas.height, -1, -canvas.height);
     // }
     // for (let i = 100; i < canvas.height; i += 100) {
     //   createPlatform(canvas.width, i, -canvas.width, -1);
     // }
-
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
-
     // TODO 1
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
+    createPlatform(200, 170, 100, 20);
+    createPlatform(300, 260, 50, 30);
+    createPlatform(150, 350, 25, 60);
 
 
 
-    
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
+    createCollectable("steve", 200, 170, 6, 0.7);
+    createCollectable("grace", 300, 260, 7, 0.5);
+    createCollectable("steve", 150, 350, 9, 0.3);
 
 
 
@@ -61,10 +62,12 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-
-
-
-
+    createCannon("right", 300, 460);
+    createCannon("right", 250, 460);
+    createCannon("right", 200, 460);
+    createCannon("left", 300, 460);
+    createCannon("left", 250, 460);
+    createCannon("left", 200, 460);
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
